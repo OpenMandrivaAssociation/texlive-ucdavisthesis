@@ -1,12 +1,12 @@
-# revision 17687
+# revision 31476
 # category Package
 # catalog-ctan /macros/latex/contrib/ucdavisthesis
-# catalog-date 2010-03-15 08:48:16 +0100
+# catalog-date 2012-02-09 21:58:23 +0100
 # catalog-license lppl
 # catalog-version 1.1
 Name:		texlive-ucdavisthesis
 Version:	1.1
-Release:	2
+Release:	3
 Summary:	A thesis/dissertation class for University of California Davis
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ucdavisthesis
