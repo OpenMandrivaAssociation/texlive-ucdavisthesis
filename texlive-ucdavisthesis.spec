@@ -6,7 +6,7 @@
 # catalog-version 1.1
 Name:		texlive-ucdavisthesis
 Version:	1.1
-Release:	7
+Release:	8
 Summary:	A thesis/dissertation class for University of California Davis
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ucdavisthesis
