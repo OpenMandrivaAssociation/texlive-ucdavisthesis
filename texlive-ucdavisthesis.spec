@@ -1,12 +1,6 @@
-# revision 31476
-# category Package
-# catalog-ctan /macros/latex/contrib/ucdavisthesis
-# catalog-date 2012-02-09 21:58:23 +0100
-# catalog-license lppl
-# catalog-version 1.1
 Name:		texlive-ucdavisthesis
-Version:	1.1
-Release:	11
+Version:	1.3
+Release:	1
 Summary:	A thesis/dissertation class for University of California Davis
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ucdavisthesis
@@ -32,24 +26,10 @@ The class conforms to the University's requirements for 2009.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/ucdavisthesis/ucdavisthesis.cls
-%{_texmfdistdir}/tex/latex/ucdavisthesis/ucdthesis10.clo
-%{_texmfdistdir}/tex/latex/ucdavisthesis/ucdthesis11.clo
-%{_texmfdistdir}/tex/latex/ucdavisthesis/ucdthesis12.clo
-%{_texmfdistdir}/tex/latex/ucdavisthesis/ucdthesis13.clo
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example.bib
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_Chap1.tex
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_Chap2.tex
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_Chap3.tex
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_figure.eps
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_figure.pdf
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_main.pdf
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/Example/ucdavisthesis_example_main.tex
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/README
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis/ucdavisthesis.pdf
+%{_texmfdistdir}/tex/latex/ucdavisthesis
+%doc %{_texmfdistdir}/doc/latex/ucdavisthesis
 #- source
-%doc %{_texmfdistdir}/source/latex/ucdavisthesis/ucdavisthesis.dtx
-%doc %{_texmfdistdir}/source/latex/ucdavisthesis/ucdavisthesis.ins
+%doc %{_texmfdistdir}/source/latex/ucdavisthesis
 
 #-----------------------------------------------------------------------
 %prep
