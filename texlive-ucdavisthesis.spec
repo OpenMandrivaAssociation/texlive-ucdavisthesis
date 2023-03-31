@@ -1,6 +1,6 @@
 Name:		texlive-ucdavisthesis
 Version:	40772
-Release:	1
+Release:	2
 Summary:	A thesis/dissertation class for University of California Davis
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/ucdavisthesis
