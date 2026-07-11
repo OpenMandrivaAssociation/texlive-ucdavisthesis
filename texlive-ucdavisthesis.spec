@@ -1,43 +1,23 @@
-Name:		texlive-ucdavisthesis
-Version:	40772
-Release:	2
-Summary:	A thesis/dissertation class for University of California Davis
+%global tl_name ucdavisthesis
+%global tl_revision 40772
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	1.3
+Release:	%{tl_revision}.1
+Summary:	A thesis/dissertation class for University of California at Davis
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/ucdavisthesis
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucdavisthesis.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucdavisthesis.doc.r%{version}.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ucdavisthesis.source.r%{version}.tar.xz
+License:	lppl1.2
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/ucdavisthesis.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/ucdavisthesis.doc.r%{tl_revision}.tar.xz
+Source2:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/ucdavisthesis.source.r%{tl_revision}.tar.xz
 BuildArch:	noarch
-BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+BuildSystem:	texlive
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The class conforms to the University's requirements for 2009.
+The ucdavisthesis class is a LaTeX class that allows you to create a
+dissertation or thesis conforming to UC Davis formatting requirements as
+of April 2016.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/ucdavisthesis
-%doc %{_texmfdistdir}/doc/latex/ucdavisthesis
-#- source
-%doc %{_texmfdistdir}/source/latex/ucdavisthesis
-
-#-----------------------------------------------------------------------
-%prep
-%setup -c -a1 -a2
-%autopatch -p1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
